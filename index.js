@@ -39,6 +39,7 @@ function renderData(){
         delEl.textContent ="delete";
         ulEl.appendChild(delEl);
         delEl.classList.add("del-item");
+        delEl.style.textDecoration="underline";
         delEl.style.cursor = "pointer";
     })
 }
