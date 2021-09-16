@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Mallineni Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">Naveen Mallineni Weather App</header>
+        <div class="app-content">
+            <div class="cities">
+                <button class="weather-btn" onclick="fetchData()">Get Weather</button>
+                <ul class="list-container">
+                    <li class="list-items">City</li>
+                    <li class="list-items city-name" onclick="setCity('London')">London</li>
+                    <li class="list-items city-name" onclick="setCity('New York')">New York</li>
+                    <li class="list-items city-name" onclick="setCity('Los Angeles')">Los Angeles</li>
+                    <li class="list-items city-name" onclick="setCity('Las Vegas')">Las Vegas</li>
+                </ul>
+            </div>
+            <div class="city-content">
+                <div class="search">
+                    <input id="search-input" type="search">
+                    <label class="search-input-label" for="search-input">Search</label>
+                </div>
+                <div class="complete-details">
+                    <ul class="complete-city-details">
+                        <li class="city-items">City</li>
+                        <li class="city-items">Description</li>
+                        <li class="city-items">Temperature(<sup>o</sup>C)</li>
+                        <li class="city-items">Pressure(hPa)</li>
+                        <li class="city-items">Data age(hrs)</li>
+                        <li class="city-items"></li>
+                    </ul>
+                </div>
+                <div class="final-details"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
